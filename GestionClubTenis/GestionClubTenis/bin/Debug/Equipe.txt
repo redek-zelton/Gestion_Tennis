@@ -1,0 +1,6 @@
+Teamou Garcia Sophie 12/4/2002 Enfant Impasse Versailles 0391731874 Compétition False True 3 3 2 0
+Teamou Leroy Pascal 01/6/2001 Homme Versailles Versailles 0501823749 Compétition True False 3 3 2 0
+Faze Leroy Pascal 01/6/2001 Homme Versailles Versailles 0501823749 Compétition True False 2 2 3 0
+Asteam Cleo Renault 4/6/1990 Homme Versailles Versailles 0784317029 Compétition True True 0 0 1 0
+Faze Perdu chloé 2/7/2012 Enfant Paris Paris 0713846908 Compétition False True 2 2 3 0
+MoiSeul Turcas Guillaume 25/05/1989 Femme Inconnue PARIS 0667676767 Compétition True True 2 1 0 0

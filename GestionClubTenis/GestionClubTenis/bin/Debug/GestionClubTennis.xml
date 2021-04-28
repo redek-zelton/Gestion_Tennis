@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GestionClubTenis</name>
+    </assembly>
+    <members>
+        <member name="M:GestionClubTenis.Competition.#ctor">
+            <summary>
+            Classe Compétition
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.Equipe.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Classe équipe pour le module
+            </summary>
+            <param name="nomEquipe"></param>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="birthday"></param>
+            <param name="sexe"></param>
+            <param name="adresse"></param>
+            <param name="ville"></param>
+            <param name="numeroTel"></param>
+            <param name="titre"></param>
+            <param name="cotisation"></param>
+            <param name="captain"></param>
+            <param name="point"></param>
+            <param name="victoire"></param>
+            <param name="defaite"></param>
+            <param name="annule"></param>
+        </member>
+        <member name="T:GestionClubTenis.IComparabe">
+            <summary>
+            IComparable
+            </summary>
+        </member>
+        <member name="F:GestionClubTenis.Junior.nom">
+            <summary>
+            Junior
+            Un junior est un membre qui a moins de 18 ans
+            Ils sont initialisés au lancé du programme à partir de la date du jour
+            </summary>
+        </member>
+        <member name="F:GestionClubTenis.ListStatic.lMembre">
+            <summary>
+            Entrepose toutes les list statics que nous aurons besoin au fur et à mesure du programme
+            Indispensable por avoir un accès n'importe où et le mettre dans une datagrid
+            Une datagrid est la meilleure chose pour afficher une liste 
+            </summary>
+        </member>
+        <member name="P:GestionClubTenis.Match.Nom1">
+            <summary>
+            Class Match
+            Un match possède deux noms d'equipes qui s'affrontent ainsi que leur score
+            Avec les noms d'équipes ont retrouvera directement les joueurs appartenants à cette equipe pour l'attribution des points
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.Participant.#ctor(System.String,System.String)">
+            <summary>
+            Classe particpants
+            Utile pour les évenements
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+        </member>
+        <member name="M:GestionClubTenis.Poste_Administration.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Double,System.String,System.String,System.String)">
+            <summary>
+            Classe Poste Administration
+            Qui sert pour savoir quel est la fonction des employes
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="sexe"></param>
+            <param name="dateNaissance"></param>
+            <param name="adresse"></param>
+            <param name="ville"></param>
+            <param name="tel"></param>
+            <param name="salaire"></param>
+            <param name="coorbancaire"></param>
+            <param name="dateEnt"></param>
+            <param name="fonction"></param>
+        </member>
+        <member name="M:GestionClubTenis.Salarie.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Double,System.String,System.String)">
+            <summary>
+            Classe salarie
+            Il peut etre membre ou non mais ce n'est pas géré ici
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="dateNaissance"></param>
+            <param name="sexe"></param>
+            <param name="adresse"></param>
+            <param name="ville"></param>
+            <param name="tel"></param>
+            <param name="salaire"></param>
+            <param name="coorbancaire"></param>
+            <param name="dateEnt"></param>
+        </member>
+        <member name="M:GestionClubTenis.Statistique.#ctor">
+            <summary>
+            statistique
+            il fonctionne directement sans interaction de l'utilisateur
+            </summary>
+        </member>
+        <member name="T:GestionClubTenis.App">
+            <summary>
+            Logique d'interaction pour App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:GestionClubTenis.MainWindow">
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:GestionClubTenis.MainWindow.lire">
+            <summary>
+            Variables accessible de partout
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.#ctor">
+            <summary>
+            le mot Tennis à été mal écrit mais cela ne change pas le principe de l'interface
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Retour_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Bouton Precedent
+            </summary>
+            <param name="sender">un objet</param>
+            <param name="e">le chemin</param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Initialisation">
+            <summary>
+            Initialisation: lit les fichiers et met dans des listes
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Sauvegarde">
+            <summary>
+            Sauvegarde:remet dans un .txt vide (afin d'évier les doublons) les elements des listes grave aux .afficher() qui retournent des strings
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.ModuleMembre(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Module Membre donne accès
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.EntrerNvMbre(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            EntrerNvMbre: creer et entrer un nouveau membre
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.ModuleCompet(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            affiche grid de compétition
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.EntrerNvEquipe(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            EnterNvEquipe: creer une équipe
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.CréerCompet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Créer une compétition
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.AfficherEquipe(System.Boolean)">
+            <summary>
+            Afficher les équipes
+            </summary>
+            <param name="equipe"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.AfficherCompet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Afficher la liste des compétition mais un bug le rend vide
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Match_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Module Match
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.MatchValider_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Formulaire de la validation d'un match: plusieus critères
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.ModuleStats(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Module Statistique: affiche l'ensemble des statistiques demandés et laisse l'historique
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.ModuleAutre(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Module Autre: réservé à la créativité comprenant 3 fonds d'écran et stage or nous voulons afficher Le poste administratif,les entraineurs,stage,évènements -> manque de temps
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.AfficherAdministration(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Afficher l'Administration
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.APropos(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Module Apropos: donne l'UML et le RAPPORT
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.UML(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Affichage de l'UML pour plus de simplicité
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Rapport(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            affichage du rapport pour plus de simplicité
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.Close(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ferme le programme
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GestionClubTenis.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:GestionClubTenis.Membre.Titre">
+            <summary>
+            Module membre avec constructeurs
+            </summary>
+        </member>
+        <member name="M:GestionClubTenis.Personne.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Classe personne
+            Ne sera pas utilise en tant que telle
+            sert de base à dautres classes qui hériteront d'elle
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="birthday"></param>
+            <param name="sexe"></param>
+            <param name="adresse"></param>
+            <param name="ville"></param>
+            <param name="telephone"></param>
+        </member>
+        <member name="T:GestionClubTenis.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:GestionClubTenis.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:GestionClubTenis.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

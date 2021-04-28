@@ -1,0 +1,12 @@
+Turcas Guillaume 25/05/1989 Femme Inconnue PARIS 0667676767 Compétition True False
+Durand Philippe 25/4/1956 Homme Rue_Place Versailles Téléphone Loisir True False
+Laforge Claudine 15/10/1980 Femme Place_de_la_Bourse Paris 0683941733 Loisir True False
+Laforge Pierre 5/11/1979 Homme Place_de_la_Bourse Paris 0643098092 Loisir True False
+Laforge Loic 12/12/2007 Homme Place_de_la_Bourse Paris 07493028432 Loisir True False
+Laforge Marie 4/9/2010 Enfant Place_de_la_Bourse Paris 0632487904 Loisir True False
+Fournier Sylvie 23/1/1980 Femme Anuvue_étoile Paris 073290249 Loisir False False
+Fournier Paul 23/6/1979 Homme Avenue_étoile Paris 07831074081 Loisir False False
+Garcia Sophie 12/4/2002 Enfant Impasse Versailles 0391731874 Compétition False True
+Leroy Pascal 01/6/2001 Homme Versailles Versailles 0501823749 Compétition True False
+Cleo Renault 4/6/1990 Homme Versailles Versailles 0784317029 Compétition True True
+Perdu chloé 2/7/2012 Enfant Paris Paris 0713846908 Compétition False True

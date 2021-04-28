@@ -1,0 +1,8 @@
+1. Afficher la liste
+2. Trier par ordre alphabétique
+3. Trier par sexe
+4. Selectionner ce qui ont cotisé
+5. Selectionner ce qui n'ont pas cotisé
+6. Selectionner ce qui sont en compétition
+7. Selectionner ce qui sont en Loisirs
+8. Quitter

@@ -1,0 +1,5 @@
+1. Afficher la liste
+2. Trier par ordre alphabétique
+3. Trier par salaire
+4. Trier par date d'entrée
+5. Quitter
